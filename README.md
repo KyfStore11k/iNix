@@ -2,7 +2,7 @@
 
 
 
-iNix is a hobbyist i386 operating system written from scratch in \*\*assembly\*\* and \*\*bare-metal C\*\*, built with \*\*GRUB\*\*, \*\*QEMU\*\*, and a completely custom kernel.
+iNix is a hobbyist i386 operating system written from scratch in **assembly** and **bare-metal C**, built with **GRUB**, **QEMU**, and a completely custom kernel.
 
 
 
