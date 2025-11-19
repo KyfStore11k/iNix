@@ -1,0 +1,25 @@
+# Build artifacts
+*.o
+*.elf
+*.bin
+*.iso
+
+# QEMU runtime files
+*.log
+
+# Windows junk
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+
+# macOS junk (in case someone opens it later)
+.DS_Store
+
+# IDE
+.vscode/
+*.code-workspace
+
+# Temporary
+*.tmp
+*.bak
