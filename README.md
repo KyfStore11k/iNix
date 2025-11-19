@@ -1,4 +1,4 @@
-\# iNix Operating System
+# iNix Operating System
 
 
 
@@ -8,37 +8,13 @@ iNix is a hobbyist i386 operating system written from scratch in \*\*assembly\*\
 
 This project is focused on:
 
-\- understanding low-level x86 architecture  
+- understanding low-level x86 architecture  
 
-\- building a minimal but complete OS kernel  
+- building a minimal but complete OS kernel  
 
-\- implementing hardware drivers manually  
+- implementing hardware drivers manually  
 
-\- writing a clean and educational codebase  
-
-
-
----
-
-
-
-\## 🚀 Features (so far)
-
-
-
-\- Multiboot-compliant GRUB bootloader  
-
-\- 32-bit protected mode kernel  
-
-\- VGA text-mode driver  
-
-\- Basic printf implementation  
-
-\- Kernel entry in pure assembly  
-
-\- Bootable ISO generation  
-
-\- Keyboard + interrupt system (in progress)
+- writing a clean and educational codebase  
 
 
 
@@ -46,7 +22,31 @@ This project is focused on:
 
 
 
-\## 📂 Project Structure
+## 🚀 Features (so far)
+
+
+
+- Multiboot-compliant GRUB bootloader  
+
+- 32-bit protected mode kernel  
+
+- VGA text-mode driver  
+
+- Basic printf implementation  
+
+- Kernel entry in pure assembly  
+
+- Bootable ISO generation  
+
+- Keyboard + interrupt system (in progress)
+
+
+
+---
+
+
+
+## 📂 Project Structure
 
 
 
@@ -54,27 +54,27 @@ This project is focused on:
 
 iNix/
 
-&nbsp;├── boot/               # Multiboot header + entry point
+├── boot/               # Multiboot header + entry point
 
-&nbsp;├── src/                # Kernel C code \& drivers
+├── src/                # Kernel C code \& drivers
 
-&nbsp;│     ├── drivers/      # Hardware drivers (VGA, keyboard, etc.)
+│     ├── drivers/      # Hardware drivers (VGA, keyboard, etc.)
 
-&nbsp;│     ├── stdlib/       # Bare-metal C standard library
+│     ├── stdlib/       # Bare-metal C standard library
 
-&nbsp;│     └── asm\_helpers/  # Assembly helpers (I/O, stubs)
+│     └── asm\_helpers/  # Assembly helpers (I/O, stubs)
 
-&nbsp;├── include/            # Global headers
+├── include/            # Global headers
 
-&nbsp;├── grub/               # GRUB boot configuration
+├── grub/               # GRUB boot configuration
 
-&nbsp;├── linker.ld           # Linker script
+├── linker.ld           # Linker script
 
-&nbsp;├── build.bat           # Build script for Windows
+├── build.bat           # Build script for Windows
 
-&nbsp;├── clean.bat           # Clean script
+├── clean.bat           # Clean script
 
-&nbsp;└── AIO.bat             # Clean + build + run
+└── aio.bat             # Clean + build + run
 
 ```
 
@@ -84,19 +84,19 @@ iNix/
 
 
 
-\## 🧱 Build Requirements (Windows-only)
+## 🧱 Build Requirements (Windows-only)
 
 
 
-\- \*\*i686-elf-gcc toolchain\*\*  
+- **i686-elf-gcc toolchain**  
 
-\- \*\*NASM\*\*  
+- **NASM**  
 
-\- \*\*QEMU (i386)\*\*  
+- **QEMU (i386)**  
 
-\- \*\*WSL (only used for grub-mkrescue)\*\*  
+- **WSL (only used for grub-mkrescue)**  
 
-\- `wsl grub-mkrescue` command available  
+- `wsl grub-mkrescue` command available  
 
 
 
@@ -104,36 +104,30 @@ iNix/
 
 
 
-\## 🔧 Build Instructions
+## 🔧 Build Instructions
 
 
 
-\### Manual:
+### Manual:
 
 `
-
 build.bat
-
 `
 
 
 
-\### Clean:
+### Clean:
 
 `
-
 clean.bat
-
 `
 
 
 
-\### Build + Clean + Run:
+### Build + Clean + Run:
 
 `
-
 AIO.bat
-
 `
 
 
@@ -142,14 +136,12 @@ AIO.bat
 
 
 
-\## 🎮 Run in QEMU
+## 🎮 Run in QEMU
 
 
 
 `
-
 qemu-system-i386 -cdrom iNix.iso
-
 `
 
 
@@ -158,25 +150,25 @@ qemu-system-i386 -cdrom iNix.iso
 
 
 
-\## 🧭 Roadmap
+## 🧭 Roadmap
 
 
 
-\- \[x] VGA text mode driver  
+- [x] VGA text mode driver  
 
-\- \[x] Kernel entry  
+- [x] Kernel entry  
 
-\- \[x] Basic printf  
+- [x] Basic printf  
 
-\- \[ ] Interrupt descriptor table (IDT)  
+- [ ] Interrupt descriptor table (IDT)  
 
-\- \[ ] Keyboard IRQ driver  
+- [ ] Keyboard IRQ driver  
 
-\- \[ ] Memory management  
+- [ ] Memory management  
 
-\- \[ ] Shell  
+- [ ] Shell  
 
-\- \[ ] Filesystem  
+- [ ] Filesystem  
 
 
 
@@ -184,7 +176,7 @@ qemu-system-i386 -cdrom iNix.iso
 
 
 
-\## 📜 License
+## 📜 License
 
 
 
@@ -196,7 +188,7 @@ This project is licensed under the MIT License.
 
 
 
-\## 🤝 Contributions
+## 🤝 Contributions
 
 
 
